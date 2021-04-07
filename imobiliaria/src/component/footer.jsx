@@ -4,8 +4,8 @@ export const footer = props => (
     <footer className="footer">
         <p> &copy; Isaque Duarte </p>
         <div className={"social"}>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github-square"></i>
+            <i className="fab fa-linkedin"></i>
+            <i className="fab fa-github-square"></i>
         </div>
     </footer>
 )

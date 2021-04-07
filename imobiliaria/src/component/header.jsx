@@ -1,9 +1,10 @@
 import React from "react"
+import BodyHome from "./body"
 
-export const header = props => (
+export const Header = props => (
     <header className={"header"}>
         <nav className={"navBar"} id={"navBar"}>
-            <a href="#home">Home</a>
+            <a href="#home" onClick={e => console.log()}>Home</a>
             <a href="#sobre">Sobre</a>
             <a href="#anuncie">Anuncie</a>
         </nav>
@@ -19,4 +20,4 @@ export const header = props => (
     </header>
 )
 
-export default (header)
+export default (Header)
