@@ -8,5 +8,38 @@
 
 .header{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $cor-cinza-claro;
+    justify-content: space-around;
+    height: 15vh;
+    
+    .navBar{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        a{
+            text-decoration: none;
+            font-size: $font-smobile-small;
+        }
+    }
+    
+    .secondRow{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .contato{
+            font-size: $font-smobile-small;
+        }
+        .numero{
+            text-decoration: black;
+            display: block;
+            font-size: $font-smobile-medium;
+        }
+    }
+}
+
+
+@media(min-height:520px){
+
 }

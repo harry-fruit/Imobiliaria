@@ -7,13 +7,15 @@ export const header = props => (
             <a href="#sobre">Sobre</a>
             <a href="#anuncie">Anuncie</a>
         </nav>
-        <section className={"logo"}>
-            <img src="#" alt="#"/>
-        </section>
-        <section className={"number"}>
-            <p>Contato</p>
-            <p>(xx)xxxx-xxxx</p>
-        </section>
+        <div className={"secondRow"}>
+            <section className={"logo"}>
+                <img src="#" alt="#"/>
+            </section>
+            <section className={"number"}>
+                <p><span className={"contato"}>Contato</span></p>
+                <a href={"tel:+55 11 0000-0000"}><span className={"numero"}>(xx)xxxx-xxxx</span></a>
+            </section>
+        </div>
     </header>
 )
 

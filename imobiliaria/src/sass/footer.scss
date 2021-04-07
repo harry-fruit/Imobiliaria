@@ -1,0 +1,22 @@
+@import "variables";
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    height: 7vh;
+    background-color: black;
+    p{
+        font-size: $font-smobile-small;
+    }
+    .social{
+        display: flex;
+        gap: 20px;
+        font-size: $font-smobile-large
+    }
+}
+
+@media(min-height:520px){
+
+}
