@@ -1,0 +1,28 @@
+{
+  "name": "imobiliaria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "create-react-app": "^4.0.3",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "6.0.1"
+  },
+  "scripts": {
+    "dev": "cd client && npm start",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harry-fruit/Imobiliaria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harry-fruit/Imobiliaria/issues"
+  },
+  "homepage": "https://github.com/harry-fruit/Imobiliaria#readme"
+}

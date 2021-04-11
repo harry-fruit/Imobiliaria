@@ -12,13 +12,17 @@ export class Header extends Component{
             const elemento = document.querySelector("#bodyMain")
             
             axios(url)
-                .then(resp => resp.data)
+                .then(html => html.data)
+                .then(html => {
+                    return(
+                        console.log(html),
+                        elemento.innerHTML = html
+                    )
+                    
+                })
+                
                 .then(html => {
                     elemento.innerHTML = html 
-                    
-                    if(push){
-                        window.history.pushState({seletor}, "Pagina ajax", url)
-                    }
                 })
 
             
@@ -32,15 +36,9 @@ export class Header extends Component{
                 sealAjax(url, seletor)
             }
         })
-        
-        window.onpopstate = e =>{
-            if(e.state){
-                const seletor = e.target.attributes["seletor"].value
-                sealAjax(window.location.href, e.state.seletor, false)
-            }
-        }
 
     }
+
 
     render(){
         return (
