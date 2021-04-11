@@ -6,6 +6,9 @@ const path = require("path")
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
+app.get('/', (req, resp) =>{
+    resp.sendFile(path.resolve("client/public/home.html"))
+})
 app.get('/home', (req, resp) =>{
     resp.sendFile(path.resolve("client/public/home.html"))
 })

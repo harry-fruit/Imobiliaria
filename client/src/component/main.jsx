@@ -1,22 +1,16 @@
 import React, {Component, Fragment} from "react"
 import axios from "axios"
 
-import "../sass/index.scss"
 
 export class HeaderBody extends Component{
     //ajax
-
-    state = {
-        
-    }
-
     componentDidMount(){
         //Async ajax
         const sealAjax = async(url, seletor, push= true ) =>{
             const response = await axios(url);
             const responseData = await response.data
             if(push){
-                window.history.pushState({seletor}, "blabla", url)
+                window.history.pushState({seletor}, null, url)
             }
             return responseData;
         }
@@ -32,7 +26,6 @@ export class HeaderBody extends Component{
                 e.preventDefault()
                 const url = e.target.attributes["dest"].value;
                 const seletor = e.target.attributes["seletor"].value;
-                console.log(seletor);
                 sealAjax(url ,seletor)
                     .then(resp =>{
                         const bodyAtual = resp
@@ -72,16 +65,17 @@ export class HeaderBody extends Component{
                         const bodyAtual = resp
                         bodyMain.innerHTML = bodyAtual
                     });
+            }else if(pathName === "/"){
+                sealAjax("/home", "home")
+                    .then(resp =>{
+                        const bodyAtual = resp
+                        bodyMain.innerHTML = bodyAtual
+                    });
             }
         }
-        
-
-
-
     }
 
     render(){
-        //const {bodyResponse} = this.state
 
         return (
             <Fragment>
@@ -106,7 +100,7 @@ export class HeaderBody extends Component{
 
 
             {/* //Body */}
-            <main id={"bodyMain"}>
+            <main className={"bodyMain"}id={"bodyMain"}>
             </main>
             </Fragment>
 
