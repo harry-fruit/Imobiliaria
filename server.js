@@ -13,12 +13,12 @@ app.get('/home', (req, resp) =>{
     resp.sendFile(path.resolve("client/public/home.html"))
 })
 
-app.get("/sobre", (req, resp)=>{
-    resp.sendFile(path.resolve("client/public/sobre.html"))
+app.get("/about", (req, resp)=>{
+    resp.sendFile(path.resolve("client/public/about.html"))
 })
 
-app.get("/anuncie", (req, resp)=>{
-    resp.sendFile(path.resolve("client/public/anuncie.html"))
+app.get("/sell", (req, resp)=>{
+    resp.sendFile(path.resolve("client/public/sell.html"))
 })
 
 app.listen(porta, ()=> console.log(`Listening on port ${porta}`))
