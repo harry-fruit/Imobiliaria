@@ -4,9 +4,11 @@ import axios from "axios"
 
 export class HeaderBody extends Component{
     componentDidMount(){
+
+
         //Tratando o seletor pra utilizar no tittle
         const path = window.location.pathname ? window.location.pathname.replace('/', '') : ''
-        const seletor = path !== '' ? path.replace(path[0], path[0].toUpperCase()) : 'Home'
+        const seletor = path !== '' ? path.replace(path[0], path[0].toUpperCase()) : "Home"
 
 
         //Async ajax
@@ -35,7 +37,7 @@ export class HeaderBody extends Component{
                         const bodyAtual = resp
                         bodyMain.innerHTML = bodyAtual
                         document.title = `${seletor}`
-                    });
+                    })
             }
         })
         
@@ -53,14 +55,13 @@ export class HeaderBody extends Component{
 
         //Dispara ajax no evento ao carregar a pag e verifica qual é o caminho certo na url pra rediorecionar o user corretamente
         window.onload = e =>{
-            console.log(seletor)
             const pathName = window.location.pathname
             if(pathName === "/home"){
                 sealAjax("/home", "home")
-                    .then(resp =>{
-                        const bodyAtual = resp
-                        bodyMain.innerHTML = bodyAtual
-                        document.title = `${seletor}`
+                .then(resp =>{
+                    const bodyAtual = resp
+                    bodyMain.innerHTML = bodyAtual
+                    document.title = `${seletor}`
                     });
             }else if(pathName === "/about"){
                 sealAjax("/about", "about")
@@ -86,6 +87,7 @@ export class HeaderBody extends Component{
             }
         }
     }
+    
 
     render(){
 
