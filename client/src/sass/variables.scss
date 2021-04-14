@@ -17,5 +17,10 @@ $font-mobile-medium: 2em;
 $font-mobile-large: 3.5em;
 
 //FontFamily
-$fontF-cookie:'Cookie', 'cursive', "Arial"; 
+@font-face {
+    font-family: fontF-cursiva;
+    src: url("../font/GreatVibes-Regular.ttf");
+}
+
+$fontF-cursiva: fontF-cursiva;
 $fontF-oswald:"Oswald", "Arial"; 

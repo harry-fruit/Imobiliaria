@@ -2,12 +2,14 @@ import React, {Fragment} from "react"
 import ReactDom from "react-dom"
 
 import "./sass/index.scss"
-import HeaderBody from "./component/main"
+import Header from "./component/main"
+import Body from "./component/body"
 import Footer from "./component/footer"
 
 ReactDom.render(
     <Fragment>
-        <HeaderBody/>
+        <Header/>
+        <Body/>
         <Footer/>
     </Fragment>
 , document.querySelector("#container"))

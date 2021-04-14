@@ -3,8 +3,9 @@ import axios from "axios"
 
 
 export class HeaderBody extends Component{
-    componentDidMount(){
 
+
+    componentDidMount(){
 
         //Tratando o seletor pra utilizar no tittle
         const path = window.location.pathname ? window.location.pathname.replace('/', '') : ''
@@ -27,7 +28,6 @@ export class HeaderBody extends Component{
         const navButtons = Array.from(PREnavButtons)
 
         navButtons.forEach(elem =>{
-
             elem.onclick = e =>{
                 e.preventDefault()
                 const url = e.target.attributes["dest"].value;
@@ -90,11 +90,8 @@ export class HeaderBody extends Component{
     
 
     render(){
-
         return (
             <Fragment>
-            {/* Header Content */}
-
             <header className={"header"}>
                 <nav className={"navBar"} id={"navBar"}>
                     <a href="home"  id={"nav"} dest={"/home"} seletor={"Home"}>Home</a>
@@ -111,14 +108,7 @@ export class HeaderBody extends Component{
                     </section>
                 </div>
             </header>
-
-
-            {/* //Body */}
-            <main className={"bodyMain"}id={"bodyMain"}>
-            </main>
             </Fragment>
-
-
         )
     }
 }
