@@ -14,7 +14,26 @@
     .social{
         display: flex;
         gap: 20px;
-        font-size: $font-smobile-large
+        font-size: $font-smobile-large;
+
+        a{
+            text-decoration: none;
+            transition: all 1s;
+            color: white;
+        }
+
+        a:hover{
+            transform: scale(1.2);
+        }
+
+        .fa-linkedin:hover{
+            color:#0e76a8 ;
+        }
+
+        .fa-github-square:hover{
+            color: #9b31c9;
+        }
+        
     }
 }
 

@@ -1,0 +1,41 @@
+@import "variables";
+@import "fonts";
+
+.bodyMain{
+        
+    .about{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f5cfaa;
+        border-radius: 5px;
+        padding: 10px;
+        
+        h1{
+            font-weight: bold;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+        }
+
+        p{
+            font-size: $font-mobile-small;
+            font-weight: 550;
+            margin-bottom: 2vh;
+        }
+    }
+    .obs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: $font-smobile-small;
+        font-weight: bold;
+        background-color: rgba(255, 0, 0, 0.850);
+        border: 2.5px solid black;
+        padding: 10px;
+        width: 100%;
+    }
+
+}

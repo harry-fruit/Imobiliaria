@@ -1,11 +1,15 @@
 import React, {Fragment, Component} from "react"
+import {getWindow} from "../script/getWindow"
+
 
 export default class Body extends Component{
-    componentDidMount(){
-        console.log(document.body.clientWidth)
-        console.log(document.body.clientHeight)
-    }
+    constructor(props){
+        super(props)
 
+
+        window.onload = getWindow()
+
+    }
 
     render(){
         return (

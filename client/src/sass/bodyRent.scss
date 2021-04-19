@@ -1,0 +1,244 @@
+.bodyMain{
+
+    .rent{
+        width: 100%;
+        min-height: 70vh;
+        margin: 5vh 0;
+
+        background-color: #f5cfaa;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h1{
+            margin-top: 4vh;
+            color: #212529;
+        }
+
+        h3{
+            color: #212529;
+            margin-bottom: 2vh;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2vh;
+
+            text-align: center;
+            width: 100%;
+            color: #212529;
+
+            .inputs{
+                width: 80%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2vh;
+
+                input[type="text"],
+                input[type="email"],
+                input[type="tel"]{
+                    padding: 5px;
+                }
+
+                input[type="text"]::placeholder{
+                    background-image: url("../icon/user-tie-solid.svg");
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    font-weight: bold;
+                }
+
+                input[type="email"]::placeholder{
+                    background-image: url("../icon/envelope-regular.svg");
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    font-weight: bold;
+                }
+                input[type="tel"]::placeholder{
+                    background-image: url("../icon/phone-alt-solid.svg");
+                    background-repeat: no-repeat;
+                    background-position:right;
+                    font-weight: bold;
+                }
+
+                input[type="text"],
+                input[type="email"],
+                input[type="tel"],
+                .houseType{
+                    width: 100%;
+                }
+
+                .houseType{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+
+                    div{
+                        input{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                button{
+                    width: 40%;
+                    height: 15%;
+                    padding: 5px 10px;
+                    margin: 4vh 0;
+    
+                    //P alinhar
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+    
+                    font-weight: bold;
+                    color: #212529;
+                    border: 1px solid #212529;
+                    border-radius: 0.2em;
+                    transition:  all 0.7s;
+                }
+    
+                button:hover{
+                    color: #DEE2E6;
+                    background-color: #212529;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:480px){
+    .bodyMain{
+        .rent{
+            form{
+                .inputs{
+                    
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="tel"]{
+                        padding: 7px;
+                    }
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="tel"],
+                    .houseType{
+                        width: 60%;
+                    }
+
+                    button{
+                        width: 25%;
+                        height: 18%;
+                        padding: 5px 10px;
+                        font-size: 1.2em;
+                        margin-top: 1vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:801px){
+    .bodyMain{
+        .rent{
+            width: 80%;
+            form{
+                .inputs{
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="tel"]{
+                        padding: 9px;
+                    }
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="tel"],
+
+                    .houseType{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1021px){
+    .bodyMain{
+        .rent{
+            width: 70%;
+            form{
+                .inputs{
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="tel"],
+                    .houseType{
+                        width: 50%;
+
+                    }
+
+                    input[type="text"]::placeholder,
+                    input[type="email"]::placeholder,
+                    input[type="tel"]::placeholder{
+                        font-size: 1.2em;
+                    }
+
+                    button{
+                        width: 20%;
+                    }
+
+                }
+            }
+        }
+    }
+}
+@media (min-width:1281px){
+    .bodyMain{
+        .rent{
+            width: 60%;
+            form{
+                .inputs{
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="tel"]{
+                        padding: 11px;
+                    }
+
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="tel"],
+                    .houseType{
+                        width: 50%;
+
+                    }
+
+                    input[type="text"]::placeholder,
+                    input[type="email"]::placeholder,
+                    input[type="tel"]::placeholder{
+                        font-size: 1.2em;
+                    }
+
+                    button{
+                        height: 22%;
+                        padding: 5px 10px;
+                        font-size: 1.3em;
+                        margin: 5vh;
+                    }
+                }
+            }
+        }
+    }
+}
