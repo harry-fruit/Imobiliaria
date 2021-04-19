@@ -3,15 +3,48 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "img/icon/somente-logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
+    },
+    
+    {
+      "src": "img/casa-opt.jpg",
+      "sizes": "3901x2926",
+      "type": "image/jpg"
+    },
+
+    {
+      "src": "img/family1.jpg",
+      "sizes": "2704x2704",
+      "type": "image/jpg"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "img/family2.jpg",
+      "sizes": "3373x3289",
+      "type": "image/jpg"
     },
+    {
+      "src": "img/family3.jpg",
+      "sizes": "800x800",
+      "type": "image/jpg"
+    },
+    {
+      "src": "img/family4.jpg",
+      "sizes": "3974x3949",
+      "type": "image/jpg"
+    },
+    {
+      "src": "img/sale-property.png",
+      "sizes": "626x469",
+      "type": "image/png"
+    },
+    {
+      "src": "img/hand-shake.png",
+      "sizes": "626x626",
+      "type": "image/png"
+    },
+
     {
       "src": "logo512.png",
       "type": "image/png",

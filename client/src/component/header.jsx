@@ -38,11 +38,11 @@ export class HeaderBody extends Component{
                 </nav>
                 <div className={"secondRow"}>
                     <section className={"logo"}>
-                        <img src="#" alt="#"/>
+                        
                     </section>
                     <section className={"number"}>
                         <p><span className={"contato"}>Get in touch</span></p>
-                        <a href={"tel:+55 11 0000-0000"}><span className={"numero"}>(xx)xxxx-xxxx</span></a>
+                        <a href={"tel:+55 11 964957516"}><span className={"numero"}>(11) 9 6495-7516</span></a>
                     </section>
                 </div>
             </header>

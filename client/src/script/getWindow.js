@@ -89,14 +89,16 @@ export function getWindow2(){
 function resetRentDOM(userData){
     const rent = document.querySelector(".rent")
     const rentChildren = Array.from(rent.children)
-    rentChildren.forEach(elem =>{
+    rentChildren.forEach((elem,index) =>{
         elem.remove()
+
     })
     
     axios("/formSend")
         .then(resp => {
-            console.log((`Thanks, ${userData.data.name}. We'll contact you soon as possible to tell your more about your new ${userData.data.houseType}.`))
             rent.innerHTML = resp.data
+            const h3 = (Array.from(rent.children))[1]
+            h3.innerHTML = `Thanks, ${userData.data.name}. We'll contact you soon as possible to tell your more about your new ${userData.data.houseType}.`
         })
     
 }
@@ -122,6 +124,7 @@ export function getFormData (){
                     .then(resp => {
                         resetRentDOM(resp)
                     })
+                    .then()
             }
         }
     }, 1000)

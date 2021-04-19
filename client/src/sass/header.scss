@@ -53,7 +53,21 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        gap: 20px;
+
+        .logo{
+            background-image: url("../icon/full-logo.png");
+            background-size:cover;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            max-width: 195px;
+            width: 60%;
+            height: 90%;
+        }
+
         .number{
+            width: 40%;
             a{
                 color: #212529;
                 font-weight: bold;
@@ -65,12 +79,12 @@
         }
 
         .contato{
-            font-size: $font-smobile-small;
+            font-size: 1.1em;
         }
         .numero{
             text-decoration: none;
             display: block;
-            font-size: 1.2em;
+            font-size: 1.1em;
 
         }
     }
@@ -89,6 +103,19 @@
                 padding: 10px 10px;
                 font-size: 1.2em;
             }
+            
+        }
+
+        .secondRow{
+            .number{
+                width: initial;
+            }
+
+            .logo{
+                max-width: 300px;
+                width: 50%;
+                height: 90%;
+            }
         }
 
     }
@@ -104,6 +131,14 @@
             }
         }
 
+        .secondRow{
+            .logo{
+                max-width: 300px;
+                width: 50%;
+                height: 90%;
+            }
+        }
+
     }
 }
 @media (min-width:801px){
@@ -114,6 +149,14 @@
 
             a{
                 width: 14%;
+            }
+        }
+
+        .secondRow{
+            .logo{
+                max-width: 300px;
+                width: 40%;
+                height: 90%;
             }
         }
 
@@ -144,10 +187,32 @@
                 font-size: 1.4em;
     
             }
+
+            .logo{
+                max-width: 270px;
+                width: 40%;
+                height: 90%;
+            }
+            
         }
 
     }
 }
+
+@media (min-width:1281px){
+    .header{
+        .secondRow{
+            .logo{
+                max-width: 320px;
+                width: 50%;
+                height: 90%;
+            }
+            
+        }
+    }
+}
+
+
 @media (min-width:1481px){
 
     .header {
@@ -174,7 +239,26 @@
                 font-size: 1.8em;
     
             }
+
+            .logo{
+                max-width: 310px;
+                width: 50%;
+                height: 90%;
+            }
         }
 
+    }
+}
+
+@media (min-width:1800px){
+    .header{
+        .secondRow{
+
+            .logo{
+                max-width: 450px;
+                width: 30%;
+                height: 90%;
+            }
+        }
     }
 }
