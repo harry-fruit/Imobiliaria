@@ -38,7 +38,9 @@ export class HeaderBody extends Component{
                 </nav>
                 <div className={"secondRow"}>
                     <section className={"logo"}>
-                        
+                        <div>
+                            
+                        </div>
                     </section>
                     <section className={"number"}>
                         <p><span className={"contato"}>Get in touch</span></p>

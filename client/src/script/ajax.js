@@ -1,15 +1,24 @@
 import axios from "axios"
-import {getWindow2} from "./getWindow"
+import { getWindow2 } from "./getWindow"
+
 
 //Async ajax insumo
-const sealAjax = async(url, seletor, push= true ) =>{
+const sealAjax = async ( url, seletor, push= true ) =>{
     const response = await axios(url);
-    const responseData = await response.data
-    if(push){
-        window.history.pushState({seletor}, null, url)
+    const responseData = await response.data;
+
+    if( push && seletor !=="xhome" && seletor !=="xabout" && seletor !=="xrent" ){
+
+        if( url !== "/xhome" && url !== "/xabout" && url !== "/xrent" ){
+            window.history.pushState({seletor}, null, url);
+        }else{
+            window.history.pushState({seletor}, null);
+        }
     }
+
     return responseData;
 }
+
 
 // P/ executar no buttons header
 export function buttonsOnClick(elem, index){
@@ -58,28 +67,28 @@ export function onLoad (){
     const seletor = path !== '' ? path.replace(path[0], path[0].toUpperCase()) : "Home"
 
     if(pathName === "/home"){
-        sealAjax("/home", "home")
+        sealAjax("/xhome", "home")
         .then(resp =>{
             const bodyAtual = resp
             bodyMain.innerHTML = bodyAtual
             document.title = `${seletor}`
             });
     }else if(pathName === "/about"){
-        sealAjax("/about", "about")
+        sealAjax("/xabout", "about")
             .then(resp =>{
                 const bodyAtual = resp
                 bodyMain.innerHTML = bodyAtual
                 document.title = `${seletor}`
             });
     }else if(pathName === "/rent"){
-        sealAjax("/rent", "rent")
+        sealAjax("/xrent", "rent")
             .then(resp =>{
                 const bodyAtual = resp
                 bodyMain.innerHTML = bodyAtual
                 document.title = `${seletor}`
             });
     }else if(pathName === "/"){
-        sealAjax("/home", "home")
+        sealAjax("/xhome", "home")
             .then(resp =>{
                 const bodyAtual = resp
                 bodyMain.innerHTML = bodyAtual

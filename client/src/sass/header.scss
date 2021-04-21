@@ -56,14 +56,19 @@
         gap: 20px;
 
         .logo{
-            background-image: url("../icon/full-logo.png");
-            background-size:cover;
-            object-fit: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            max-width: 195px;
-            width: 60%;
-            height: 90%;
+            max-height: 95%;
+            width:25vw;
+            max-width: 250px;
+            height: 100%;
+            
+            div{
+                background-image: url("../icon/somente-logo.png");
+                background-size:contain;
+                object-fit:cover;
+                background-repeat: no-repeat;
+                background-position:center ;
+                height: 100%;
+            }
         }
 
         .number{
@@ -110,12 +115,6 @@
             .number{
                 width: initial;
             }
-
-            .logo{
-                max-width: 300px;
-                width: 50%;
-                height: 90%;
-            }
         }
 
     }
@@ -130,15 +129,6 @@
                 width: 16%;
             }
         }
-
-        .secondRow{
-            .logo{
-                max-width: 300px;
-                width: 50%;
-                height: 90%;
-            }
-        }
-
     }
 }
 @media (min-width:801px){
@@ -151,15 +141,6 @@
                 width: 14%;
             }
         }
-
-        .secondRow{
-            .logo{
-                max-width: 300px;
-                width: 40%;
-                height: 90%;
-            }
-        }
-
     }
 }
 @media (min-width:1020px){
@@ -186,32 +167,11 @@
                 display: block;
                 font-size: 1.4em;
     
-            }
-
-            .logo{
-                max-width: 270px;
-                width: 40%;
-                height: 90%;
-            }
-            
+            }          
         }
 
     }
 }
-
-@media (min-width:1281px){
-    .header{
-        .secondRow{
-            .logo{
-                max-width: 320px;
-                width: 50%;
-                height: 90%;
-            }
-            
-        }
-    }
-}
-
 
 @media (min-width:1481px){
 
@@ -239,26 +199,7 @@
                 font-size: 1.8em;
     
             }
-
-            .logo{
-                max-width: 310px;
-                width: 50%;
-                height: 90%;
-            }
         }
 
-    }
-}
-
-@media (min-width:1800px){
-    .header{
-        .secondRow{
-
-            .logo{
-                max-width: 450px;
-                width: 30%;
-                height: 90%;
-            }
-        }
     }
 }
