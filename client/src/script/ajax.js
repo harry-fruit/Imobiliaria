@@ -67,28 +67,28 @@ export function onLoad (){
     const seletor = path !== '' ? path.replace(path[0], path[0].toUpperCase()) : "Home"
 
     if(pathName === "/home"){
-        sealAjax("/xhome", "home")
+        sealAjax("/home", "home")
         .then(resp =>{
             const bodyAtual = resp
             bodyMain.innerHTML = bodyAtual
             document.title = `${seletor}`
             });
     }else if(pathName === "/about"){
-        sealAjax("/xabout", "about")
+        sealAjax("/about", "about")
             .then(resp =>{
                 const bodyAtual = resp
                 bodyMain.innerHTML = bodyAtual
                 document.title = `${seletor}`
             });
     }else if(pathName === "/rent"){
-        sealAjax("/xrent", "rent")
+        sealAjax("/rent", "rent")
             .then(resp =>{
                 const bodyAtual = resp
                 bodyMain.innerHTML = bodyAtual
                 document.title = `${seletor}`
             });
     }else if(pathName === "/"){
-        sealAjax("/xhome", "home")
+        sealAjax("/home", "home")
             .then(resp =>{
                 const bodyAtual = resp
                 bodyMain.innerHTML = bodyAtual

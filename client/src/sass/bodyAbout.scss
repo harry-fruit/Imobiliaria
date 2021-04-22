@@ -2,10 +2,10 @@
 @import "fonts";
 
 .bodyMain{
-        
+    position: relative;
     .about{
         margin-top: 2vh;
-        margin-bottom: 2vh;
+        margin-bottom: 35vh;
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -14,6 +14,7 @@
         color: #212529;
         border-radius: 5px;
         padding: 20px;
+        
         
         h1{
             font-weight: bold;
@@ -30,13 +31,73 @@
     .obs{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         font-size: $font-smobile-small;
         font-weight: bold;
         background-color: rgba(255, 0, 0, 0.850);
+        position: absolute;
+        bottom: 0px;
         border: 2.5px solid black;
         padding: 10px;
         width: 100%;
+        height: 30vh;
     }
 
+}
+
+@media (min-height:450px){
+    .bodyMain{
+        .about{
+            margin-bottom: 30vh;
+        }
+        .obs{
+            height: 25vh;
+        }
+    }
+}
+
+@media (min-height:600px){
+    .bodyMain{
+        .about{
+            margin-bottom: 23vh;
+        }
+        .obs{
+            height: 18vh;
+        }
+    }
+}
+
+@media (min-height:800px){
+    .bodyMain{
+        .about{
+            margin-bottom: 20vh;
+        }
+        .obs{
+            height: 15vh;
+        }
+    }
+}
+
+@media (min-height:1000px){
+    .bodyMain{
+        .about{
+            margin-bottom: 18vh;
+        }
+        .obs{
+            height: 13vh;
+            max-height: 150px;
+        }
+    }
+}
+@media (min-height:1300px){
+    .bodyMain{
+        .about{
+            margin-bottom: 15vh;
+        }
+        .obs{
+            height: 8vh;
+            max-height: 150px;
+        }
+    }
 }
