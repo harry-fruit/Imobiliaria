@@ -7,22 +7,22 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 app.get('/', (req, resp) =>{
-    resp.sendFile(path.resolve("./client/public/home.html"))
+    resp.sendFile(path.resolve("./client/public/xml/home.xml"))
 })
 app.get('/home', (req, resp) =>{
-    resp.sendFile(path.resolve("./client/public/html/home.html"))
+    resp.sendFile(path.resolve("./client/public/xml/home.xml"))
 })
 
 app.get("/about", (req, resp)=>{
-    resp.sendFile(path.resolve("./client/public/html/about.html"))
+    resp.sendFile(path.resolve("./client/public/xml/about.xml"))
 })
 
 app.get("/rent", (req, resp)=>{
-    resp.sendFile(path.resolve("./client/public/html/rent.html"))
+    resp.sendFile(path.resolve("./client/public/xml/rent.xml"))
     
 })
 app.get("/formSend", (req, resp)=>{
-    resp.sendFile(path.resolve("./client/public/html/formSend.html"))
+    resp.sendFile(path.resolve("./client/public/xml/formSend.xml"))
 })
 app.post("/data", (req, resp)=>{
     resp.send({

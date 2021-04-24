@@ -51,13 +51,15 @@
                 }
 
                 
-
+                
                 input[type="text"]::placeholder{
                     background-image: url("../icon/user-tie-solid.svg");
-                    background-repeat: no-repeat;
+                    background-repeat:no-repeat;
                     background-position: right;
                     font-weight: bold;
                 }
+
+
 
                 input[type="email"]::placeholder{
                     background-image: url("../icon/envelope-regular.svg");
@@ -247,6 +249,24 @@
                         padding: 5px 10px;
                         font-size: 1.3em;
                         margin: 5vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@-moz-document url-prefix(){
+    .bodyMain{
+        .rent{
+            form{
+                .inputs{
+                    input[type="text"]::placeholder,
+                    input[type="email"]::placeholder,
+                    input[type="tel"]::placeholder{
+                        background-size: 6%;
+                        background-position-x: 98%;
+                        background-position-y: center;
                     }
                 }
             }

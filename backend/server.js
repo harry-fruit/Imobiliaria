@@ -24,13 +24,13 @@ app.get("/home", (req, resp)=>{
 })
 
 app.get('/xhome', (req, resp) =>{
-    resp.sendFile(path.resolve(__dirname + '/html/home.html' ));
+    resp.sendFile(path.resolve(__dirname + '/build/xml/home.xml' ));
 })
 
 
 //about
 app.get("/xabout", (req, resp)=>{
-    resp.sendFile(path.resolve(__dirname + '/html/about.html'));
+    resp.sendFile(path.resolve(__dirname + '/build/xml/about.xml'));
 })
 
 app.get("/about", (req, resp)=>{
@@ -40,7 +40,7 @@ app.get("/about", (req, resp)=>{
 
 //rent
 app.get("/xrent", (req, resp)=>{
-    resp.sendFile(path.resolve(__dirname + '/html/rent.html'));
+    resp.sendFile(path.resolve(__dirname + '/build/xml/rent.xml'));
 })
 
 app.get("/rent", (req, resp)=>{
@@ -52,7 +52,7 @@ app.get("/rent", (req, resp)=>{
 
 app.get("/formSend", (req, resp)=>{
 
-    resp.sendFile(path.resolve(__dirname + "/html/formSend.html"));
+    resp.sendFile(path.resolve(__dirname + "/build/xml/formSend.xml"));
 })
 
 
